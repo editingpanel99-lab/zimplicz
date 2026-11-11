@@ -106,6 +106,31 @@
       </div>
     </section>
 
+    <!-- PHOTO REEL -->
+    <section class="reel" aria-label="Moments we love to capture">
+      <div class="reel__row">
+        <div class="reel__track">
+          <img src="assets/photos/vk-wedding.jpg" alt="Wedding couple under a veil" loading="lazy" />
+          <img src="assets/photos/vc-clapper.jpg" alt="Clapperboard on location" loading="lazy" />
+          <img src="assets/photos/studio-neon.jpg" alt="Neon studio sign" loading="lazy" />
+          <img src="assets/photos/pd-podcast.jpg" alt="Studio microphone" loading="lazy" />
+          <img src="assets/photos/vk-camera.jpg" alt="Photographer with a camera" loading="lazy" />
+          <img src="assets/photos/vc-soundstage.jpg" alt="Film crew on a soundstage" loading="lazy" />
+          <img src="assets/photos/pd-onair.jpg" alt="On Air neon sign" loading="lazy" />
+          <img src="assets/photos/pd-book.jpg" alt="Hands flipping through a magazine" loading="lazy" />
+          <img src="assets/photos/vk-wedding.jpg" alt="" loading="lazy" />
+          <img src="assets/photos/vc-clapper.jpg" alt="" loading="lazy" />
+          <img src="assets/photos/studio-neon.jpg" alt="" loading="lazy" />
+          <img src="assets/photos/pd-podcast.jpg" alt="" loading="lazy" />
+          <img src="assets/photos/vk-camera.jpg" alt="" loading="lazy" />
+          <img src="assets/photos/vc-soundstage.jpg" alt="" loading="lazy" />
+          <img src="assets/photos/pd-onair.jpg" alt="" loading="lazy" />
+          <img src="assets/photos/pd-book.jpg" alt="" loading="lazy" />
+        </div>
+      </div>
+      <p class="reel__caption">Shoot it <span>✦</span> Film it <span>✦</span> Publish it</p>
+    </section>
+
     <!-- FAMILY / SUB COMPANIES -->
     <section class="family" id="family">
       <div class="section-head">
@@ -115,6 +140,7 @@
 
       <div class="family__grid">
         <article class="brand brand--vk reveal" data-hover data-cursor="Shoot">
+          <img class="brand__photo" src="assets/photos/vk-shooter.jpg" alt="" loading="lazy" />
           <div class="brand__art"><img class="brand__logo" src="assets/vk-studio-logo.jpg" alt="VK Studio logo" /><span class="rec"></span></div>
           <div class="brand__top"><span class="brand__n">01</span><span class="brand__tag">Photo &amp; Video Studio</span></div>
           <h3 class="brand__name">VK<br />Studio</h3>
@@ -124,6 +150,7 @@
         </article>
 
         <article class="brand brand--vc reveal" data-hover data-cursor="Action">
+          <img class="brand__photo" src="assets/photos/vc-clapper.jpg" alt="" loading="lazy" />
           <div class="brand__art"><img class="brand__logo" src="assets/view-clickz-logo.jpg" alt="View Clickz logo" /><span class="film"></span></div>
           <div class="brand__top"><span class="brand__n">02</span><span class="brand__tag">Film &amp; TV Production</span></div>
           <h3 class="brand__name">View Clickz<br />Productions</h3>
@@ -133,6 +160,7 @@
         </article>
 
         <article class="brand brand--pd reveal" data-hover data-cursor="Read">
+          <img class="brand__photo" src="assets/photos/pd-podcast.jpg" alt="" loading="lazy" />
           <div class="brand__art"><span class="page p-1"></span><span class="page p-2"></span><img class="brand__logo brand__logo--light" src="assets/pawura-logo.jpg" alt="Pawura Digital logo" /></div>
           <div class="brand__top"><span class="brand__n">03</span><span class="brand__tag">Media &amp; Publications</span></div>
           <h3 class="brand__name">Pawura<br />Digital</h3>
@@ -150,28 +178,29 @@
         <p class="section-head__side">From the first frame to the final page. Three studios, one brief, every channel.</p>
       </div>
 
+      <div class="svc-preview" id="svcPreview" aria-hidden="true"><img alt="" /></div>
       <ul class="svc">
-        <li class="svc__item" style="--c: var(--gold)" data-hover>
+        <li class="svc__item" style="--c: var(--gold)" data-hover data-img="assets/photos/vk-wedding.jpg">
           <span class="svc__n">01</span><h3>Photography</h3>
           <p>Weddings, events, products and commercial shoots. <b>VK Studio</b></p><span class="svc__arrow">→</span>
         </li>
-        <li class="svc__item" style="--c: var(--gold)" data-hover>
+        <li class="svc__item" style="--c: var(--gold)" data-hover data-img="assets/photos/vk-camera.jpg">
           <span class="svc__n">02</span><h3>Video &amp; Brand Content</h3>
           <p>Corporate and promo videos, reels, editing, colour grading and motion graphics. <b>VK Studio</b></p><span class="svc__arrow">→</span>
         </li>
-        <li class="svc__item" style="--c: var(--yellow)" data-hover>
+        <li class="svc__item" style="--c: var(--yellow)" data-hover data-img="assets/photos/vc-soundstage.jpg">
           <span class="svc__n">03</span><h3>TV Commercials &amp; Advertising</h3>
           <p>From creative concept and script to shoot, direction and final cut. <b>View Clickz</b></p><span class="svc__arrow">→</span>
         </li>
-        <li class="svc__item" style="--c: var(--yellow)" data-hover>
+        <li class="svc__item" style="--c: var(--yellow)" data-hover data-img="assets/photos/vc-crew.jpg">
           <span class="svc__n">04</span><h3>Films, Series &amp; Documentaries</h3>
           <p>Short films, mini-dramas, web series, documentaries and music videos. <b>View Clickz</b></p><span class="svc__arrow">→</span>
         </li>
-        <li class="svc__item" style="--c: var(--red)" data-hover>
+        <li class="svc__item" style="--c: var(--red)" data-hover data-img="assets/photos/pd-book.jpg">
           <span class="svc__n">05</span><h3>Digital Publishing</h3>
           <p>Digital magazines, articles, e-books, interviews and podcasts. <b>Pawura Digital</b></p><span class="svc__arrow">→</span>
         </li>
-        <li class="svc__item" style="--c: var(--red)" data-hover>
+        <li class="svc__item" style="--c: var(--red)" data-hover data-img="assets/photos/pd-onair.jpg">
           <span class="svc__n">06</span><h3>Sponsored Content &amp; Partnerships</h3>
           <p>Brand advertising, sponsored stories and media partnerships. <b>Pawura Digital</b></p><span class="svc__arrow">→</span>
         </li>
@@ -281,7 +310,7 @@
       </div>
     </div>
     <div class="footer__huge" aria-hidden="true">zimplicz</div>
-    <div class="footer__bottom"><span>© <span id="year"></span> Zimplicz. All rights reserved.</span><span>Made loud, kept simple.</span></div>
+    <div class="footer__bottom"><span>© <span id="year"></span> Zimplicz. All rights reserved.</span><span>Stock photography via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> · Made loud, kept simple.</span></div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

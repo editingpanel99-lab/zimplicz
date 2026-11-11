@@ -196,6 +196,18 @@ section { position: relative; padding: clamp(80px, 12vw, 180px) var(--gutter); }
 .principle h3 { font-family: var(--display); font-size: 32px; letter-spacing: -0.03em; margin: 14px 0 10px; }
 .principle p { color: var(--muted); }
 
+/* ---------- PHOTO REEL ---------- */
+.reel { padding: 0 0 clamp(60px, 8vw, 120px); overflow: hidden; }
+.reel__row { transform: rotate(2deg) scale(1.04); }
+.reel__track { display: flex; gap: 18px; width: max-content; animation: marquee 60s linear infinite; }
+.reel:hover .reel__track { animation-play-state: paused; }
+.reel__track img { height: clamp(200px, 26vw, 360px); width: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 22px;
+  filter: grayscale(1) contrast(1.1); transition: filter .5s, transform .6s var(--ease); }
+.reel__track img:nth-child(odd) { aspect-ratio: 4 / 3; }
+.reel__track img:hover { filter: none; transform: translateY(-10px) rotate(-1.5deg); }
+.reel__caption { text-align: center; margin-top: 48px; font-family: var(--display); font-weight: 800; font-size: clamp(22px, 3vw, 40px); letter-spacing: -0.03em; }
+.reel__caption span { color: var(--pink); margin: 0 .4em; }
+
 /* ---------- FAMILY ---------- */
 .section-head { margin-bottom: 80px; }
 .section-head--row { display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; }
@@ -231,6 +243,11 @@ section { position: relative; padding: clamp(80px, 12vw, 180px) var(--gutter); }
 .brand:hover .chips li { background: rgba(12,10,18,.1); }
 .brand__go { position: absolute; top: 72px; right: 32px; width: 56px; height: 56px; border-radius: 50%; background: var(--paper); color: var(--ink); display: grid; place-items: center; font-size: 22px; transform: scale(0) rotate(-90deg); transition: transform .5s var(--ease); }
 .brand:hover .brand__go { transform: scale(1); background: var(--ink); color: var(--bg); }
+
+/* card photo: faint mono at rest, tinted by the brand colour on hover */
+.brand__photo { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; object-fit: cover;
+  opacity: .12; filter: grayscale(1); mix-blend-mode: luminosity; transition: opacity .8s var(--ease), transform 1.2s var(--ease); }
+.brand:hover .brand__photo { opacity: .28; mix-blend-mode: multiply; transform: scale(1.06); }
 
 /* real brand logos sit on their own black tile */
 .brand__logo { position: absolute; left: 0; top: 0; z-index: 1; width: 200px; height: 200px; object-fit: cover; border-radius: 28px;
@@ -299,6 +316,13 @@ section { position: relative; padding: clamp(80px, 12vw, 180px) var(--gutter); }
 .svc__item p { color: #4a4555; }
 .svc__item p b { display: inline-block; margin-left: 6px; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); padding: 3px 10px; border-radius: 999px; border: 1px solid var(--ink); }
 .svc__arrow { font-size: 30px; justify-self: end; transition: transform .5s var(--ease); }
+.services { isolation: isolate; }
+.svc-preview { position: fixed; top: 0; left: 0; z-index: 40; width: 300px; aspect-ratio: 4 / 3; border-radius: 20px; overflow: hidden;
+  pointer-events: none; opacity: 0; transform: translate(-50%, -50%) scale(.6) rotate(-6deg);
+  transition: opacity .35s, transform .5s var(--ease); box-shadow: 0 30px 60px rgba(0,0,0,.3); }
+.svc-preview.on { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(-3deg); }
+.svc-preview img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (hover: none), (max-width: 820px) { .svc-preview { display: none; } }
 .svc__item:hover .svc__arrow { transform: rotate(-45deg); }
 
 /* ---------- WORK ---------- */

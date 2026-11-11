@@ -48,6 +48,28 @@
     el.addEventListener('mouseleave', () => { el.style.transform = ''; });
   });
 
+  /* ---------- Service row photo preview (follows cursor) ---------- */
+  const prev = $('#svcPreview');
+  if (prev) {
+    const pimg = $('img', prev);
+    let px = 0, py = 0, tx = 0, ty = 0, raf = 0;
+    const follow = () => {
+      px += (tx - px) * 0.15; py += (ty - py) * 0.15;
+      prev.style.left = px + 'px'; prev.style.top = py + 'px';
+      raf = prev.classList.contains('on') ? requestAnimationFrame(follow) : 0;
+    };
+    $$('.svc__item[data-img]').forEach(li => {
+      li.addEventListener('mouseenter', e => {
+        pimg.src = li.dataset.img; tx = px = e.clientX; ty = py = e.clientY;
+        prev.classList.add('on'); if (!raf) raf = requestAnimationFrame(follow);
+      });
+      li.addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; });
+      li.addEventListener('mouseleave', () => prev.classList.remove('on'));
+    });
+    // warm the cache so the first hover isn't blank
+    $$('.svc__item[data-img]').forEach(li => { const i = new Image(); i.src = li.dataset.img; });
+  }
+
   /* ---------- Nav ---------- */
   const nav = $('#nav'); let lastY = 0;
   addEventListener('scroll', () => {
