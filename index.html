@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zimplicz — Creative & Digital Advertising Agency</title>
+  <meta name="description" content="Zimplicz is a creative and digital advertising group. Home of VK Studio, View Clickz Productions and Pawura Digital." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Inter+Tight:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="brand/zimplicz-icon.svg" />
+  <link rel="icon" type="image/png" href="brand/zimplicz-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="loader" id="loader">
+    <div class="loader__word">
+      <span>Z</span><span>i</span><span>m</span><span>p</span><span>l</span><span>i</span><span>c</span><span>z</span>
+    </div>
+    <div class="loader__count"><span id="loaderNum">0</span>%</div>
+    <div class="loader__bar"><i id="loaderBar"></i></div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"><span id="cursorLabel"></span></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#top" class="logo" aria-label="Zimplicz home">
+      <img src="brand/zimplicz-logo-on-dark.svg" alt="Zimplicz" class="logo__img" />
+    </a>
+    <nav class="nav__links">
+      <a href="#family" data-hover>Family</a>
+      <a href="#services" data-hover>Services</a>
+      <a href="#work" data-hover>Work</a>
+      <a href="#process" data-hover>Process</a>
+    </nav>
+    <a href="#contact" class="pill magnetic" data-hover>Let's talk <span class="pill__arrow">↗</span></a>
+    <button class="burger" id="burger" aria-label="Open menu"><i></i><i></i></button>
+  </header>
+
+  <!-- FULLSCREEN MENU -->
+  <div class="menu" id="menu">
+    <div class="menu__bg"></div>
+    <ul class="menu__list">
+      <li><a href="#family"><small>01</small>Family</a></li>
+      <li><a href="#services"><small>02</small>Services</a></li>
+      <li><a href="#work"><small>03</small>Work</a></li>
+      <li><a href="#process"><small>04</small>Process</a></li>
+      <li><a href="#contact"><small>05</small>Contact</a></li>
+    </ul>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="blobs" aria-hidden="true">
+        <i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i>
+      </div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <div class="hero__meta reveal">
+        <span>Creative &amp; Digital Advertising</span>
+        <span>Est. Sri Lanka — Working Worldwide</span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line"><span class="w">We make</span></span>
+        <span class="line"><span class="w">brands</span> <em class="serif w">impossible</em></span>
+        <span class="line"><span class="w">to</span> <span class="w rotator" id="rotator"><b class="c-pink">ignore.</b><b class="c-yellow">forget.</b><b class="c-cyan">scroll past.</b><b class="c-lime">skip.</b></span></span>
+      </h1>
+
+      <div class="hero__bottom">
+        <p class="hero__lede reveal">Zimplicz is a creative group of photographers, filmmakers and storytellers. We shoot it, film it and publish it, so your story looks good, sounds loud and reaches the right people.</p>
+        <a href="#family" class="sticker" data-hover data-cursor="Scroll">
+          <svg viewBox="0 0 200 200" class="sticker__ring">
+            <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+            <text><textPath href="#circ">CREATIVE • DIGITAL • ADVERTISING • ZIMPLICZ • </textPath></text>
+          </svg>
+          <span class="sticker__core">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee marquee--tilt" aria-label="What we do">
+      <div class="marquee__track">
+        <span>Photography</span><i>✦</i><span>Videography</span><i>✦</i><span>TV Commercials</span><i>✦</i><span>Films &amp; Series</span><i>✦</i><span>Digital Magazines</span><i>✦</i><span>Podcasts</span><i>✦</i><span>Media Partnerships</span><i>✦</i>
+        <span>Photography</span><i>✦</i><span>Videography</span><i>✦</i><span>TV Commercials</span><i>✦</i><span>Films &amp; Series</span><i>✦</i><span>Digital Magazines</span><i>✦</i><span>Podcasts</span><i>✦</i><span>Media Partnerships</span><i>✦</i>
+      </div>
+    </section>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto">
+      <p class="eyebrow">( Who we are )</p>
+      <p class="manifesto__text" id="manifesto">
+        We believe simple ideas, done brilliantly, beat complicated ones every time. Zimplicz brings photography, film and digital publishing under one roof so your brand speaks with one bold voice — on every screen, every page and every feed.
+      </p>
+      <div class="manifesto__principles">
+        <div class="principle reveal"><span class="principle__n c-pink">01</span><h3>Simple wins.</h3><p>We strip ideas to their sharpest form, then make them unforgettable.</p></div>
+        <div class="principle reveal"><span class="principle__n c-yellow">02</span><h3>Craft matters.</h3><p>Every frame, pixel and word is built with obsessive detail.</p></div>
+        <div class="principle reveal"><span class="principle__n c-cyan">03</span><h3>Results talk.</h3><p>Creative that looks great and performs — measured, tested, scaled.</p></div>
+      </div>
+    </section>
+
+    <!-- FAMILY / SUB COMPANIES -->
+    <section class="family" id="family">
+      <div class="section-head">
+        <p class="eyebrow">( The Zimplicz family )</p>
+        <h2 class="big">Three studios.<br /><em class="serif">One</em> loud idea.</h2>
+      </div>
+
+      <div class="family__grid">
+        <article class="brand brand--vk reveal" data-hover data-cursor="Shoot">
+          <div class="brand__art"><img class="brand__logo" src="assets/vk-studio-logo.jpg" alt="VK Studio logo" /><span class="rec"></span></div>
+          <div class="brand__top"><span class="brand__n">01</span><span class="brand__tag">Photo &amp; Video Studio</span></div>
+          <h3 class="brand__name">VK<br />Studio</h3>
+          <p class="brand__desc">A creative photography and video production studio specialising in cinematic visuals, commercial photography, promotional videos, event coverage and digital content for individuals and businesses.</p>
+          <ul class="chips"><li>Weddings &amp; Events</li><li>Product &amp; Commercial</li><li>Corporate &amp; Promo Videos</li><li>Music Videos</li><li>Editing &amp; Colour Grading</li><li>Motion Graphics</li><li>Reels &amp; Brand Content</li></ul>
+          <span class="brand__go">↗</span>
+        </article>
+
+        <article class="brand brand--vc reveal" data-hover data-cursor="Action">
+          <div class="brand__art"><img class="brand__logo" src="assets/view-clickz-logo.jpg" alt="View Clickz logo" /><span class="film"></span></div>
+          <div class="brand__top"><span class="brand__n">02</span><span class="brand__tag">Film &amp; TV Production</span></div>
+          <h3 class="brand__name">View Clickz<br />Productions</h3>
+          <p class="brand__desc">A creative media production company for film, television, advertising and digital entertainment. We tell engaging visual stories through creative direction, production and post-production.</p>
+          <ul class="chips"><li>TV Commercials</li><li>Short Films &amp; Web Series</li><li>Documentaries</li><li>Music Videos</li><li>Concept &amp; Scriptwriting</li><li>Directing &amp; Post</li></ul>
+          <span class="brand__go">↗</span>
+        </article>
+
+        <article class="brand brand--pd reveal" data-hover data-cursor="Read">
+          <div class="brand__art"><span class="page p-1"></span><span class="page p-2"></span><img class="brand__logo brand__logo--light" src="assets/pawura-logo.jpg" alt="Pawura Digital logo" /></div>
+          <div class="brand__top"><span class="brand__n">03</span><span class="brand__tag">Media &amp; Publications</span></div>
+          <h3 class="brand__name">Pawura<br />Digital</h3>
+          <p class="brand__desc">A digital media and publishing network for digital magazines, storytelling and advertising. We connect readers, writers, businesses and communities through meaningful content and media partnerships.</p>
+          <ul class="chips"><li>Digital Magazines</li><li>Articles &amp; e-Books</li><li>Sponsored Content</li><li>Interviews &amp; Podcasts</li><li>Media Partnerships</li><li>Community Projects</li></ul>
+          <span class="brand__go">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="section-head section-head--row">
+        <h2 class="big">What we<br /><em class="serif">do best</em></h2>
+        <p class="section-head__side">From the first frame to the final page. Three studios, one brief, every channel.</p>
+      </div>
+
+      <ul class="svc">
+        <li class="svc__item" style="--c: var(--gold)" data-hover>
+          <span class="svc__n">01</span><h3>Photography</h3>
+          <p>Weddings, events, products and commercial shoots. <b>VK Studio</b></p><span class="svc__arrow">→</span>
+        </li>
+        <li class="svc__item" style="--c: var(--gold)" data-hover>
+          <span class="svc__n">02</span><h3>Video &amp; Brand Content</h3>
+          <p>Corporate and promo videos, reels, editing, colour grading and motion graphics. <b>VK Studio</b></p><span class="svc__arrow">→</span>
+        </li>
+        <li class="svc__item" style="--c: var(--yellow)" data-hover>
+          <span class="svc__n">03</span><h3>TV Commercials &amp; Advertising</h3>
+          <p>From creative concept and script to shoot, direction and final cut. <b>View Clickz</b></p><span class="svc__arrow">→</span>
+        </li>
+        <li class="svc__item" style="--c: var(--yellow)" data-hover>
+          <span class="svc__n">04</span><h3>Films, Series &amp; Documentaries</h3>
+          <p>Short films, mini-dramas, web series, documentaries and music videos. <b>View Clickz</b></p><span class="svc__arrow">→</span>
+        </li>
+        <li class="svc__item" style="--c: var(--red)" data-hover>
+          <span class="svc__n">05</span><h3>Digital Publishing</h3>
+          <p>Digital magazines, articles, e-books, interviews and podcasts. <b>Pawura Digital</b></p><span class="svc__arrow">→</span>
+        </li>
+        <li class="svc__item" style="--c: var(--red)" data-hover>
+          <span class="svc__n">06</span><h3>Sponsored Content &amp; Partnerships</h3>
+          <p>Brand advertising, sponsored stories and media partnerships. <b>Pawura Digital</b></p><span class="svc__arrow">→</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- WORK (horizontal scroll) -->
+    <section class="work" id="work">
+      <div class="work__pin">
+        <div class="work__head">
+          <p class="eyebrow">( Selected work )</p>
+          <h2 class="big">Stuff we're<br /><em class="serif">proud of</em></h2>
+          <p class="work__hint">Scroll →</p>
+        </div>
+        <div class="work__track" id="workTrack">
+          <a class="case case--1" href="#" data-hover data-cursor="View">
+            <div class="case__img"><span class="case__big">◉</span></div>
+            <div class="case__info"><h3>Project Name One</h3><span>Photography · VK Studio</span></div>
+          </a>
+          <a class="case case--2" href="#" data-hover data-cursor="Play">
+            <div class="case__img"><span class="case__play">▶</span></div>
+            <div class="case__info"><h3>Project Name Two</h3><span>TVC · View Clickz</span></div>
+          </a>
+          <a class="case case--3" href="#" data-hover data-cursor="View">
+            <div class="case__img"><span class="case__big">Aa</span></div>
+            <div class="case__info"><h3>Project Name Three</h3><span>Digital Magazine · Pawura Digital</span></div>
+          </a>
+          <a class="case case--4" href="#" data-hover data-cursor="View">
+            <div class="case__img"><span class="case__big">✦</span></div>
+            <div class="case__info"><h3>Project Name Four</h3><span>Short Film · View Clickz</span></div>
+          </a>
+          <a class="case case--5" href="#" data-hover data-cursor="View">
+            <div class="case__img"><span class="case__big">“ ”</span></div>
+            <div class="case__info"><h3>Project Name Five</h3><span>Podcast · Pawura Digital</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat reveal"><b data-count="150">0</b><span>+</span><p>Brands served</p></div>
+      <div class="stat reveal"><b data-count="500">0</b><span>+</span><p>Campaigns launched</p></div>
+      <div class="stat reveal"><b data-count="12">0</b><span>M+</span><p>Monthly reach</p></div>
+      <div class="stat reveal"><b data-count="3">0</b><span></span><p>Specialist studios</p></div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process">
+      <div class="section-head">
+        <p class="eyebrow">( How we work )</p>
+        <h2 class="big">Simple process.<br /><em class="serif">Serious</em> results.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal" style="--c: var(--pink)"><span class="step__n">01</span><h3>Discover</h3><p>We dig into your business, audience and competitors to find the real opportunity.</p></div>
+        <div class="step reveal" style="--c: var(--yellow)"><span class="step__n">02</span><h3>Ideate</h3><p>Strategy becomes a sharp creative idea — tested on paper before a single rupee is spent.</p></div>
+        <div class="step reveal" style="--c: var(--cyan)"><span class="step__n">03</span><h3>Create</h3><p>Our studios shoot, film, write and publish — in-house, on time, on brand.</p></div>
+        <div class="step reveal" style="--c: var(--lime)"><span class="step__n">04</span><h3>Amplify</h3><p>We launch, measure and optimise across every channel until it performs.</p></div>
+      </div>
+    </section>
+
+    <!-- CLIENTS MARQUEE -->
+    <section class="clients">
+      <p class="eyebrow center">( Trusted by brands that like to stand out )</p>
+      <div class="marquee marquee--plain">
+        <div class="marquee__track marquee__track--slow">
+          <span>Client Logo</span><span>Your Brand</span><span>Client Logo</span><span>Your Brand</span><span>Client Logo</span><span>Your Brand</span>
+          <span>Client Logo</span><span>Your Brand</span><span>Client Logo</span><span>Your Brand</span><span>Client Logo</span><span>Your Brand</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+      <div class="blobs blobs--cta" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+      <p class="eyebrow">( Got a brief? )</p>
+      <h2 class="cta__title">Let's make<br />something <em class="serif">loud.</em></h2>
+      <a href="mailto:hello@zimplicz.com" class="cta__mail magnetic" data-hover data-cursor="Say hi">hello@zimplicz.com</a>
+      <div class="cta__row">
+        <a href="tel:+94000000000" class="pill pill--light" data-hover>+94 00 000 0000</a>
+        <a href="https://wa.me/94000000000" class="pill pill--light" data-hover>WhatsApp ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div>
+        <a href="#top" class="logo logo--lg"><img src="brand/zimplicz-logo-on-dark.svg" alt="Zimplicz" class="logo__img" /></a>
+        <p class="footer__tag">Creative &amp; digital advertising group.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Our family</h4>
+        <div class="footer__logos"><img src="assets/vk-studio-logo.jpg" alt="VK Studio" /><img src="assets/view-clickz-logo.jpg" alt="View Clickz" /><img src="assets/pawura-logo.jpg" alt="Pawura Digital" class="light" /></div>
+        <a href="#family">VK Studio</a><a href="#family">View Clickz Productions</a><a href="#family">Pawura Digital Media &amp; Publications</a>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a><a href="#">LinkedIn</a><a href="#">YouTube</a>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <p>Colombo, Sri Lanka</p>
+      </div>
+    </div>
+    <div class="footer__huge" aria-hidden="true">zimplicz</div>
+    <div class="footer__bottom"><span>© <span id="year"></span> Zimplicz. All rights reserved.</span><span>Made loud, kept simple.</span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
