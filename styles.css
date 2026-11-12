@@ -247,6 +247,13 @@ section { position: relative; padding: clamp(80px, 12vw, 180px) var(--gutter); }
 .brand__art { position: relative; height: 230px; margin: 28px 0 10px; }
 .brand__name { font-family: var(--display); font-weight: 800; font-size: clamp(30px, 10.5cqi, 64px); line-height: .92; letter-spacing: -0.04em; margin-top: auto; }
 .brand__desc { margin: 18px 0 22px; opacity: .8; }
+.brand__parent { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; padding: 5px 12px 5px 5px; border-radius: 999px;
+  background: rgba(246,241,233,.08); font-size: 13px; letter-spacing: .02em; width: fit-content; transition: background .4s; }
+.brand__parent img { width: 22px; height: 22px; display: block; }
+.brand__parent b { font-family: var(--display); font-weight: 800; letter-spacing: -0.02em; }
+.brand:hover .brand__parent { background: rgba(12,10,18,.14); }
+.family__lede { margin-top: 28px; max-width: 620px; font-size: clamp(16px, 1.4vw, 20px); color: rgba(246,241,233,.75); }
+.family__lede b { color: var(--paper); font-family: var(--display); }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chips li { font-size: 13px; padding: 6px 12px; border-radius: 999px; background: rgba(246,241,233,.08); transition: background .4s; }
 .brand:hover .chips li { background: rgba(12,10,18,.1); }
